@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { AppBar, Toolbar, Button, Container } from '@mui/material';
-import Mario from './Mario';
+import Mario from './mario/pages/Mario';
 import Mattia from './Mattia';
 
 function App() {
