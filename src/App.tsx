@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { AppBar, Toolbar, Button, Container } from '@mui/material';
 import Mario from './mario/pages/Mario';
-import Mattia from './Mattia';
+import Mattia from './mattia/pages/Mattia';
 
 function App() {
   return (
