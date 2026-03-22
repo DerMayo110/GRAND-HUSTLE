@@ -1,5 +1,6 @@
+
 import { useState, useEffect } from "react";
-import bdo2 from "./Bilder/bdo2.png";
+import bdo2 from "../assets/Bilder/bdo2.png";
 
 
 function SteamDisplay(){
