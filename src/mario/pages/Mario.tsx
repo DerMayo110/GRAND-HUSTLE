@@ -1,14 +1,15 @@
-import { useState } from 'react';
-import {Button, Typography, Container}  from '@mui/material';
-
-
+import {useState} from "react";
 const Mario = () => {
-  const [jahr, setJahr] = useState(2026);
-  return (
-    <Container>
-      {jahr}
-    </Container>
-  );
+  const [count, setCount] = useState(0)
+  return(
+  <div>
+    <h1>{count}</h1>
+    <p>Das ist ein Test</p>
+    <button onClick={() => setCount(count+1)}>TEST</button>
+  </div>
+  
+  )
+  
 };
 
 export default Mario;
