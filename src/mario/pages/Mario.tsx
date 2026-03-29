@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react";
 import CountButton from "../components/Button.tsx";
+
 const Mario = () => {
   const [count, setCount] = useState(0);
   useEffect(() => {
