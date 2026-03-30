@@ -3,7 +3,7 @@
     text: string;
     onClick: () => void;
   }
-const CountButton = (props: ButtonProps) => {
+const Button = (props: ButtonProps) => {
       return(
         <button 
             className={styles.button}
@@ -13,4 +13,4 @@ const CountButton = (props: ButtonProps) => {
         </button>
       )
   }
-export default CountButton;
+export default Button;
