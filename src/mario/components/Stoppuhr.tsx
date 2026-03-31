@@ -1,4 +1,4 @@
-//UseEffect 
+//UseEffect mit Cleanup
 import {useEffect, useState} from "react";
 
 const Stoppuhr = () => {
