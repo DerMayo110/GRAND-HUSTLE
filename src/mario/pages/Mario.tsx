@@ -3,6 +3,7 @@ import useCounter from "../hooks/useCounter";
 import useToggle from "../hooks/useToggle";
 import DasLager from "../components/DasLager";
 import Stoppuhr from "../components/Stoppuhr";
+import DataFetcher from "../components/DataFetcher";
 
 
 const Mario = () => {
@@ -26,6 +27,10 @@ const Mario = () => {
     <Button text="StoppUhr starten/deaktivieren" onClick={toggleStopUhr} />
     {StoppUhrVisible && <Stoppuhr /> }
     <DasLager items={items} />
+    <br />
+    <br />
+    <br />
+    <DataFetcher />
   </div>
   
   )
