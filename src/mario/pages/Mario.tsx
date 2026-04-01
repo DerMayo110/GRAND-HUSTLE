@@ -1,12 +1,15 @@
-import Button from "../components/Button.tsx";
-import useCounter from "../hooks/useCounter.ts";
-import useToggle from "../hooks/useToggle.ts";
-import DasLager from "../components/DasLager.tsx";
+import Button from "../components/Button";
+import useCounter from "../hooks/useCounter";
+import useToggle from "../hooks/useToggle";
+import DasLager from "../components/DasLager";
+import Stoppuhr from "../components/Stoppuhr";
 
 
 const Mario = () => {
   const { count, increment, reset } = useCounter();
-  const {visible,toggle} = useToggle();
+  const {visible: visibleText,toggle: toggleText} = useToggle();
+  const {visible: StoppUhrVisible,toggle: toggleStopUhr} = useToggle();
+  
   const items = [
     { id: 1, name: 'Stein', quantity: 3 },
     { id: 2, name: 'Holz', quantity: 1 },
@@ -16,10 +19,12 @@ const Mario = () => {
   return(
   <div>
     <h1>{count}</h1>
-    {visible && <p >Sichtbar</p> }
+    {visibleText && <p >Sichtbar</p> }
     <Button text="Zähl hoch" onClick={increment} />
     <Button text="Reset" onClick={reset} />
-    <Button text="Text ein-/ausblenden" onClick={toggle} />
+    <Button text="Text ein-/ausblenden" onClick={toggleText} />
+    <Button text="StoppUhr starten/deaktivieren" onClick={toggleStopUhr} />
+    {StoppUhrVisible && <Stoppuhr /> }
     <DasLager items={items} />
   </div>
   
